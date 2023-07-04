@@ -32,12 +32,12 @@ export default defineConfig(({ mode }) => {
             obfuscatorPlugin({
                 // include: ["src/**/*.jsx"],
                 // exclude: [/node_modules/],
-                // apply: "build",
+                apply: 'build',
+                debugger: true,
                 options: {
                     // your javascript-obfuscator options
                     // debugProtection: true,
                     // ...  [See more options](https://github.com/javascript-obfuscator/javascript-obfuscator)
-                    // compact: true,
                     domainLock: ['.dado.tw', 'localhost'],
                     domainLockRedirectUrl: 'about:blank',
                     // http://127.0.0.1:5500/dist/index.html

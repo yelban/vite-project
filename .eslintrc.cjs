@@ -42,6 +42,12 @@ module.exports = {
         'import/resolver': {
             node: {
                 extensions: ['.js', '.jsx', '.ts', '.tsx'],
+
+                // an array of absolute paths which will also be searched
+                // think NODE_PATH
+                paths: ['/usr/local/share/global_modules'],
+
+                // this is technically for identifying `node_modules` alternate names
                 moduleDirectory: ['node_modules', 'src/'],
             },
         }, // Unable to resolve path to module './Auth'.eslintimport/no-unresolved
