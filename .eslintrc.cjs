@@ -42,6 +42,7 @@ module.exports = {
         'import/resolver': {
             node: {
                 extensions: ['.js', '.jsx', '.ts', '.tsx'],
+                moduleDirectory: ['node_modules', 'src/'],
             },
         }, // Unable to resolve path to module './Auth'.eslintimport/no-unresolved
     },
