@@ -76,6 +76,8 @@ export default defineConfig(({ mode }) => {
         ],
         // 啟用 https
         server: {
+            // host: true,
+            // 指定伺服器應該監聽哪些 IP 地址。將其設置為 0.0.0.0 或 true，以便在包括 LAN 和公共地址在內的所有地址上進行監聽。
             https: {
                 key: fs.readFileSync(process.env.VITE_HTTPS_KEY),
                 cert: fs.readFileSync(process.env.VITE_HTTPS_CERT),
